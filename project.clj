@@ -6,4 +6,7 @@
   :dependencies [[org.clojure/clojure "1.9.0"]]
   :main ^:skip-aot living-clojure.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {
+             :uberjar {:aot :all}
+             :dev     {:plugins [[com.jakemccrary/lein-test-refresh "0.23.0"]]}
+             })
