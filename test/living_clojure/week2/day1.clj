@@ -4,7 +4,7 @@
 (defn fib-seq
   "Fibonacci Sequence"
   []
-  (->> (iterate (fn [[nMinus2 nMinus1]] [nMinus1 (+ nMinus1 nMinus2)]) [0 1])
+  (->> (iterate (fn [[n-2 n-1]] [n-1 (+ n-1 n-2)]) [0 1])
        (map last))
   )
 
